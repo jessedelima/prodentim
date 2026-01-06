@@ -10,16 +10,24 @@
 - `script.js`: controla menu hambúrguer, acordeão do FAQ, rolagem suave entre seções e comportamento de imagens clicáveis.
 
 ## Como Visualizar Localmente
-- Requisitos: Python instalado (qualquer versão com `http.server`).
-- Passos no Windows:
+- Opção A: Python instalado (qualquer versão com `http.server`).
+- Opção B: Node.js instalado (recomendado para desenvolvimento).
 
+### Usando Node.js
+```bash
+cd C:\Users\User\Documents\Projets\prodentim2.0
+npm run start
+```
+
+Servidor: http://localhost:3000/
+
+### Usando Python
 ```bash
 cd C:\Users\User\Documents\Projets\prodentim2.0
 python -m http.server 5500
 ```
 
-- Abra no navegador:
-- http://localhost:5500/index.html
+- Abra no navegador: http://localhost:5500/index.html
 
 ## Responsividade
 - Em telas pequenas (celular/tablet) aparece um botão hambúrguer ☰.
@@ -61,4 +69,3 @@ python -m http.server 5500
 
 ## Licença
 - Uso livre para fins de landing/marketing relacionados a ProDentim. Ajuste conforme necessidade do seu projeto.
-
