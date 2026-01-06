@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
-        body { display: block !important; opacity: 1 !important; visibility: visible !important; font-family: 'Quicksand', sans-serif; color: #272727; }
+        body { display: block !important; opacity: 1 !important; visibility: visible !important; font-family: 'Quicksand', sans-serif; color: #272727; overflow-x: hidden; }
         
         /* BANNER VERDE (image_e2a666.png) */
         .claim-banner { background-color: #007953; padding: 30px 10px; position: relative; margin-top: 50px; }
@@ -47,7 +47,7 @@
         .bg-green { background-color: #f0fff4; }
         .bg-beige { background-color: #fffaf0; }
 
-        img { cursor: pointer; }
+        img { cursor: pointer; max-width: 100%; height: auto; }
         .mobile-menu-btn { background: none; border: none; color: #fff; font-size: 28px; line-height: 1; padding: 8px 12px; }
         .mobile-menu { position: fixed; top: 0; right: -100%; width: 80%; max-width: 340px; height: 100%; background: #007953; color: #fff; z-index: 1040; transition: right 0.3s ease; box-shadow: -6px 0 12px rgba(0,0,0,0.25); }
         .mobile-menu.open { right: 0; }
@@ -55,6 +55,26 @@
         .mobile-menu .order-now-img { display: block; max-width: 140px; margin: 16px 20px; }
         .mobile-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1030; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
         .mobile-overlay.open { opacity: 1; pointer-events: auto; }
+
+        .dark-green-bg .container { flex-wrap: wrap; gap: 8px; }
+        .light-green-bg .container .row > [class*="col-"] { margin-bottom: 16px; }
+
+        @media (max-width: 576px) {
+            .claim-banner h2 { font-size: 22px; }
+            .price-large { font-size: 48px; }
+            .price-unit { font-size: 16px; }
+            .dashed-badge { width: 100%; font-size: 12px; }
+            .total-row { font-size: 18px; }
+            .total-row b { font-size: 22px; }
+            .accordion { padding: 18px 16px; }
+            .accordion span { font-size: 18px; }
+            .panel p { font-size: 16px; }
+            .mobile-menu { width: 90%; max-width: 360px; }
+            .mobile-menu .order-now-img { max-width: 120px; }
+            .container { padding-left: 12px; padding-right: 12px; }
+            h2.display-5 { font-size: 1.5rem; }
+            .lead { font-size: 1rem; }
+        }
     </style>
 
     <script src="script.js" defer></script>
